@@ -1,0 +1,155 @@
+/* start variabls */
+:root {
+  --mainColor: #4c91f1;
+  --secondColor: #292c34;
+  --lightColor: #ffffff;
+  --therdColor: #f9f9f9;
+  --mainTransition: 0.5s;
+  --mainLineHaight: 1.5;
+}
+/* end variabls */
+/* start global ruls */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  background-color: var(--therdColor);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.main-cont {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .main-cont {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .main-cont {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .main-cont {
+    width: 1170px;
+  }
+}
+/* end global ruls */
+/* header */
+.main-cont {
+}
+header {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--lightColor);
+}
+header .box {
+}
+header .box .line {
+  display: flex;
+  gap: 10px;
+  color: var(--secondColor);
+  align-items: center;
+}
+header .box i {
+  color: var(--mainColor);
+}
+header .box h1 {
+  color: var(--mainColor);
+}
+header .box p {
+  color: var(--therdColor);
+}
+header .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--mainColor);
+}
+@media (max-width: 300px) {
+  header {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+/* my cont */
+.mycont {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px; */
+  display: inline;
+}
+.mycont .box1 {
+  flex-basis: 45%;
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mycont .experians {
+}
+.mycont h2 {
+  color: var(--mainColor);
+  border-bottom: 5px solid var(--mainColor);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.mycont .box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.mycont h3 {
+  color: var(--secondColor);
+  margin-bottom: 10px;
+}
+.mycont a {
+  color: var(--mainColor);
+}
+.mycont .location {
+  display: flex;
+  gap: 10px;
+}
+.mycont .location i {
+  color: var(--mainColor);
+}
+.mycont .loc {
+}
+.mycont .date {
+  display: flex;
+  gap: 10px;
+}
+.mycont .date i {
+  color: var(--mainColor);
+}
+.mycont .date2 {
+}
+.mycont .experians p {
+  padding: 0 30px;
+}
